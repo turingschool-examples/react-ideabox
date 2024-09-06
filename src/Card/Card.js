@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ title, description, id, deleteIdea, isFavorited }) => {
+const Card = ({ title, description, id, deleteIdea }) => {
   return (
-    <div className={`card ${isFavorited && 'favorite'}`}>
+    <div className={`card`}>
       <h3>{title}</h3>
       <p>{description}</p>
       <button onClick={() => deleteIdea(id)}>🗑</button>
