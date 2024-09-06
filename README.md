@@ -1,19 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# React III Ideabox
+# React Ideabox
 
-This repo contains a starter kit for the React III lesson. 
+This repo contains a few starter kits for React lessons. Always be sure you're on the correct branch for each lesson!
 
 ## Installation Instructions
 1. Clone the repository:
 ```
-git clone git@github.com:turingschool-examples/react-iii-ideabox.git
+git clone git@github.com:turingschool-examples/react-ideabox.git
 or
-git clone https://github.com/turingschool-examples/react-iii-ideabox.git
+git clone https://github.com/turingschool-examples/react-ideabox.git
 ```
 2. `cd` into the cloned repo
 ```
-cd react-ii-ideabox
+cd react-ideabox
 ```
 3. Install dependencies
 ```
@@ -23,7 +23,4 @@ npm i
 ```
 npm start
 ```
-5. Follow instructions for installing the [server](https://github.com/turingschool-examples/ideabox-api) IN A DIFFERENT DIRECTORY.
-
-## Code Sand Box Alternative
-A codesandbox template of this repo can also be found <a href="https://codesandbox.io/s/react-iii-ideabox-starter-mz1g2" target="_blank">here<a/>.
+5. If needed, follow instructions for installing the [server](https://github.com/turingschool-examples/ideabox-api) IN A DIFFERENT DIRECTORY.
