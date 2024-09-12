@@ -7,6 +7,10 @@ export default function App() {
   const [ideas, setIdeas] = useState([]);
   const [error, setError] = useState('')
 
+  useEffect(() => {
+    getIdeas();
+  }, [])
+
   function addIdea(newIdea) {
     fetch('http://localhost:3001/api/v1/ideas', {
       method: 'POST',
@@ -17,12 +21,24 @@ export default function App() {
     })
     .then(response => response.json())
     .then(data => setIdeas([...ideas, data]))
-    .catch(error => setError(error.message)) 
+    .catch(error => {
+      console.log(error)
+      setError('Oops! Something went wrong! Please try again in a couple minutes.')
+    })
   }
 
   const deleteIdea = (id) => {
-    const filteredIdeas = ideas.filter((idea) => idea.id !== id);
+    fetch(`http://localhost:3001/api/v1/ideas/${id}`, {
+      method: 'DELETE'
+    })
+    .then(data => {
+      const filteredIdeas = ideas.filter((idea) => idea.id !== id);
     setIdeas(filteredIdeas);
+    })
+    .catch(error => {
+      console.log(error)
+      setError('Oops! Something went wrong! Please try again in a couple minutes.')
+    }) 
   };
 
   function getIdeas() {
@@ -34,10 +50,6 @@ export default function App() {
       setError('Oops! Something went wrong! Please try again in a couple minutes.')
     })
   }
-
-  useEffect(() => {
-    getIdeas();
-  }, [])
 
   return (
     <main className='App'>
