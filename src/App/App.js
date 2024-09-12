@@ -19,7 +19,6 @@ export default function App() {
     <main className='App'>
       <h1>IdeaBox</h1>
       <Form addIdea={addIdea} />
-      {!ideas.length && <p>Hmm...it feels empty in here. Let's add some ideas!</p>}
       <Ideas ideas={ideas} deleteIdea={deleteIdea} />
     </main>
   );
