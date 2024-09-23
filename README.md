@@ -23,7 +23,7 @@ npm start
 ```
 5. If needed, follow instructions for installing the [server](https://github.com/turingschool-examples/ideabox-api) IN A DIFFERENT DIRECTORY.
 
-### Branches:
+## Active Branches
 - `main`: Completed version of the [Ideabox Tutorial](https://curriculum.turing.edu/module3/lessons/react_ideabox) used in [the Ideabox review lesson](https://curriculum.turing.edu/module3/lessons/react_ideabox_review).
 - `network-requests`: Used in [the React: Advanced Data Management lesson](https://curriculum.turing.edu/module3/lessons/react_advanced_data_management).
 - `network-requests-complete`: A completed version of the above branch for students to reference AFTER the lesson.
