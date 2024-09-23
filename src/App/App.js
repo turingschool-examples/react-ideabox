@@ -31,9 +31,9 @@ export default function App() {
     fetch(`http://localhost:3001/api/v1/ideas/${id}`, {
       method: 'DELETE'
     })
-    .then(data => {
+    .then(() => {
       const filteredIdeas = ideas.filter((idea) => idea.id !== id);
-    setIdeas(filteredIdeas);
+      setIdeas(filteredIdeas);
     })
     .catch(error => {
       console.log(error)
