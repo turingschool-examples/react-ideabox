@@ -29,3 +29,5 @@ npm start
 - `network-requests-complete`: A completed version of the above branch for students to reference AFTER the lesson.
 - `cypress-testing`: Used in the [Cypress Testing lesson](https://curriculum.turing.edu/module3/lessons/intro_to_cypress_testing).
 - `cypress-testing-complete`: A completed version of the above branch for students to reference AFTER the lesson.
+- `error-handling`: Used in the [FE Error Handling lesson](https://curriculum.turing.edu/module3/lessons/fe_error_handling).
+- `error-handling-complete`: A completed version of the above branch for students to reference AFTER the lesson.
