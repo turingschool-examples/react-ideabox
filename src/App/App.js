@@ -19,11 +19,15 @@ export default function App() {
       },
       body: JSON.stringify(newIdea), 
     })
-    .then(response => response.json())
-    .then(data => setIdeas([...ideas, data]))
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.status); 
+      }
+      return response.json()
+    })    .then(data => setIdeas([...ideas, data]))
     .catch(error => {
       console.log(error)
-      setError('Oops! Something went wrong! Please try again in a couple minutes.')
+      setError('Oops! Something went wrong! Please check that you\'ve filled out all the fields.')
     })
   }
 
